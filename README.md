@@ -64,8 +64,8 @@ npm install
 3. Create a `.env` file in the backend directory with the following variables:
 ```
 PORT=5051
-MONGO_URI=mongodb://localhost:27017/catering_restaurant
-JWT_SECRET=abc123
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
 ```
 
 ## Running the Application
