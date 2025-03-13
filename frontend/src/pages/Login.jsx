@@ -21,11 +21,15 @@ function Login() {
 
     useEffect(() => {
         if (isSuccess || user) {
-            navigate('/dashboard');
+            if (user && user.role === 'admin') {
+                navigate('/staff-portal'); 
+            } else {
+                navigate('/dashboard'); 
+            }
         }
-
         dispatch(reset());
     }, [user, isSuccess, navigate, dispatch]);
+    
 
     const onChange = (e) => {
         setFormData((prevState) => ({

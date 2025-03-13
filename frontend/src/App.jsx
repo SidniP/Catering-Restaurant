@@ -26,7 +26,7 @@ function App() {
                         <Route path="/dashboard" element={<Dashboard />} />
                         
                         <Route element={<PrivateRoute allowedRoles={['staff', 'admin']} />}>
-                            <Route path="/staff" element={<StaffPortal />} />
+                            <Route path="/staff-portal" element={<StaffPortal />} />
                         </Route>
                     </Routes>
                 </main>
